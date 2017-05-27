@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:id="@+id/id_order_decriptiontion_bar"
+        android:text="Order Description"
+        android:textSize="22sp"
+        android:textColor="@color/colorText"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/id_order_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Please make sure to deliver the container to the front of the yard instead of the back of the yard.
+
+It would also be very good if you could make the delivery prior to 12:00 thiswednesday.
+
+Thanks!"
+            android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/id_btn_back"
+                android:text="Back"
+
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/button_border"
+                android:ems="10"
+                android:textColor="#a7a6a6" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

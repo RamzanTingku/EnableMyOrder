@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+
+        android:id="@+id/id_person_name"
+        android:text="Person Name"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:textSize="22sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/ic_phone_call" />
+
+
+            <TextView
+                android:id="@+id/id_pnone_number"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="phone"
+                android:paddingLeft="15dp"
+                android:text="+00 00000-000000"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/id_btn_copy_phone"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+
+                android:ems="12"
+                android:text="Copy number"
+                android:textColor="@color/colorText" />
+
+
+            <Button
+                android:id="@+id/id_btn_call"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@color/colorOrange"
+                android:ems="12"
+                android:text="Call number"
+                android:textColor="@color/colorText" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                app:srcCompat="@drawable/ic_mail" />
+
+
+            <TextView
+                android:id="@+id/id_mail"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="15dp"
+                android:text="person@email.com"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/id_btn_copy_email"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:ems="12"
+                android:text="Copy email"
+                android:textColor="@color/colorText" />
+
+
+            <Button
+                android:id="@+id/id_btn_send_mail"
+                android:text="Send e-mail"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@color/colorOrange"
+                android:ems="12"
+                android:textColor="@color/colorText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/id_btn_back"
+                android:layout_width="wrap_content"
+
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="39dp"
+                android:background="@drawable/button_border"
+                android:ems="10"
+                android:text="Back"
+                android:textColor="#a7a6a6" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
